@@ -2,7 +2,8 @@ import HomeButton from "./HomeButton"
 import {useEffect, useState} from 'react'
 
 function AddNewRecords(){
-
+    const BACKEND_URL  = process.env.REACT_APP_BACKEND_URL;
+    
     const [title, setTitle] = useState()
     const [artist, setArtist] = useState()
     const [year, setYear] = useState()
@@ -44,7 +45,7 @@ function AddNewRecords(){
         price: price,
         }),
         };
-        fetch('http://localhost:4000/records', requestOptions).then((response) =>
+        fetch(BACKEND_URL + '/records', requestOptions).then((response) =>
         response.json()
         );
         } 
