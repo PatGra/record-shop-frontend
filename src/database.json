@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "title": "Egal",
+      "artist": "DJ Egal",
+      "year": "2015",
+      "cover": "",
+      "price": 5.5
+    },
+    {
+      "title": "xyz",
+      "artist": "DJ Egal",
+      "year": "2015",
+      "price": 5.5
+    },
+    {
+      "title": "xyz",
+      "artist": "DJ Egal",
+      "year": "2015",
+      "price": 5.5,
+      "cover": ""
+    }
+  ]
+}
