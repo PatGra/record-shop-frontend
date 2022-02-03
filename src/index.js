@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 
-const BACKEND_URL  = process.env.REACT_APP_BACKEND_URL;
+
 
 ReactDOM.render(
   <React.StrictMode>

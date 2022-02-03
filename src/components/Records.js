@@ -6,9 +6,10 @@ import SingleRecord from './SingleRecord.js'
 function Records(){
 
 const [data, setData] = useState(null)
+const BACKEND_URL  = process.env.REACT_APP_BACKEND_URL;
 
 useEffect(()=>{
-    fetch('http://localhost:4000/records')
+    fetch(BACKEND_URL + '/records')
     .then(res =>{
         console.log('test');
       return res.json()
