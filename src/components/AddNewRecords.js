@@ -1,5 +1,6 @@
 import HomeButton from "./HomeButton"
 import {useEffect, useState} from 'react'
+import { useNavigate } from "react-router-dom";
 
 function AddNewRecords(){
     const BACKEND_URL  = process.env.REACT_APP_BACKEND_URL;
@@ -8,6 +9,7 @@ function AddNewRecords(){
     const [artist, setArtist] = useState()
     const [year, setYear] = useState()
     const [price, setPrice] = useState()
+    const navigate= useNavigate()
     console.log(BACKEND_URL);
 
     function handleTitle(event){
@@ -49,6 +51,7 @@ function AddNewRecords(){
         fetch(BACKEND_URL + '/records', requestOptions).then((response) =>
         response.json()
         );
+     navigate(-1)   
         } 
 
         function preventDef(event){
