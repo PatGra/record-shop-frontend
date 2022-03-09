@@ -4,6 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from './components/Home.js'
 import Records from './components/Records.js'
 import AddNewRecords from './components/AddNewRecords.js'
+import SignUp from './components/SignUp.js';
+import LogIn from './components/LogIn';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/records" element={<Records />} />
         <Route path="/addRecords" element={<AddNewRecords />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/logIn" element={<LogIn />} />
       </Routes>
       </header>
     </div>

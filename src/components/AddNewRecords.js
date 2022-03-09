@@ -8,6 +8,7 @@ function AddNewRecords(){
     const [artist, setArtist] = useState()
     const [year, setYear] = useState()
     const [price, setPrice] = useState()
+    console.log(BACKEND_URL);
 
     function handleTitle(event){
         const content= event.target.value;
